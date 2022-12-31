@@ -1,0 +1,48 @@
+.header {
+    padding: 18px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+form {
+    display: grid;
+    /* to use css-grid */
+    /* creates 2 columns */
+    gap: 10px 50px;
+    /* creates a gap between the columns and rows */
+}
+.form-row {
+    display: flex;
+    flex-direction: column;
+    /* flexbox is sued to palce the label and input below each other and allows the input to fill out the entrie width */
+  }
+.col{
+  width: 25%;
+  padding: 10px;
+  }
+
+input[type=submit] {
+    background-color: #1abc9c;
+    border: none;
+    color: white;
+  
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 25%;
+}
+.addproduct {
+    padding: 18px;
+    text-align: left;
+    color: #1abc9c;
+   
+}
+
+#myBtn {
+    color: #1abc9c;
+}

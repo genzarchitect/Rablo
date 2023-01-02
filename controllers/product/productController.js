@@ -80,10 +80,10 @@ async function updateproduct(req, res) {
           _id: req.body.productid
         }, {
           $set: {
-            name: isNullorUndefinedorEmpty(req.body.brandName) ? req.body.name : getproduct.name,
-            price: isNullorUndefinedorEmpty(req.body.brandName) ? req.body.price : getproduct.price,
-            rating: isNullorUndefinedorEmpty(req.body.brandName) ? req.body.rating : getproduct.rating,
-            company: isNullorUndefinedorEmpty(req.body.brandName) ? req.body.company : getproduct.company,
+            name: isNullorUndefinedorEmpty(req.body.name) ? req.body.name : getproduct.name,
+            price: isNullorUndefinedorEmpty(req.body.price) ? req.body.price : getproduct.price,
+            rating: isNullorUndefinedorEmpty(req.body.rating) ? req.body.rating : getproduct.rating,
+            company: isNullorUndefinedorEmpty(req.body.company) ? req.body.company : getproduct.company,
             featured: isNullorUndefinedorEmpty(req.body.featured) ? req.body.featured : getproduct.featured
           }
         })
